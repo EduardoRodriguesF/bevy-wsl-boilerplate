@@ -6,7 +6,17 @@ More details about the birth of that boilerplate in my [Medium article here](htt
 
 ## Usage
 
-In order to run it, you can use `run.sh`.
+This script depends on `rsync` to copy your source code to the Windows temp folder, so it is important to have this package installed.
+
+```bash
+# ArchLinux (my case)
+$ sudo pacman -S rsync
+
+# Ubuntu
+$ sudo apt-get rsync
+```
+
+In order to run it, it is as simple as executing `run.sh` script.
 
 ```bash
 $ ./run.sh
