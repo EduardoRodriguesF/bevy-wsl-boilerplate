@@ -4,7 +4,7 @@ tmp_path="/mnt/c/Windows/temp/$directory_name"
 
 mkdir -p $tmp_path
 
-rsync . $tmp_path -r --exclude-from=.gitignore
+rsync . $tmp_path -r --exclude-from=.gitignore --filter="exclude .git" --progress
 
 cd $tmp_path
 
