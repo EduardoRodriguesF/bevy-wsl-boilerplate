@@ -8,4 +8,4 @@ rsync . $tmp_path -r --exclude-from=.gitignore --filter="exclude .git" --progres
 
 cd $tmp_path
 
-powershell.exe -Command "cargo run $@"
+powershell.exe -Command "cargo +nightly run $@"
